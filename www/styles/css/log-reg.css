@@ -1,0 +1,30 @@
+#log-reg-container .nav-tabs li {
+  width: 50%;
+  background-color: #e8efec; }
+  #log-reg-container .nav-tabs li .active {
+    background-color: white; }
+#log-reg-container .panel {
+  padding: 0px;
+  margin: auto;
+  max-width: 740px;
+  min-width: 740px; }
+  #log-reg-container .panel .panel-body {
+    padding: 0px; }
+#log-reg-container .form-group {
+  padding: 20px 30px 0px; }
+#log-reg-container .btn {
+  margin-bottom: 30px; }
+#log-reg-container #container {
+  padding: 30px; }
+#log-reg-container h1, #log-reg-container h2, #log-reg-container h3, #log-reg-container h4, #log-reg-container h5 {
+  text-align: center; }
+#log-reg-container #register-form {
+  display: none; }
+#log-reg-container .error-div {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+  #log-reg-container .error-div .error-label {
+    color: red; }
+
+/*# sourceMappingURL=log-reg.css.map */
