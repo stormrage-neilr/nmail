@@ -19,6 +19,15 @@
     margin: 0px;
     cursor: pointer;
   }
+  .panel:hover{
+    background-color: #f6f5ef;
+    .contact-label{
+      color: #5d5d5d;
+    }
+    label {
+      color: #000000;
+    }
+  }
   @media screen and (min-width: 700px) {
     #menu-button {
       display: none;
@@ -39,14 +48,5 @@
   }
   .contact-label{
     color: #787878;
-  }
-  .panel:hover{
-    background-color: #f6f5ef;
-    .contact-label{
-      color: #5d5d5d;
-    }
-    label {
-      color: #000000;
-    }
   }
 }

@@ -6,8 +6,10 @@
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/css/log-reg.css">
     <link rel="stylesheet" type="text/css" href="styles/css/inbox.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/contacts.css">
     <link rel="stylesheet" type="text/css" href="styles/css/side-menu.css">
     <link rel="stylesheet" type="text/css" href="styles/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
 </head>
 <body>
 <?php
@@ -15,8 +17,9 @@
     if (isset($_SESSION['contacts'])) {
         echo file_get_contents("side-menu.html").
             "<div class='main'>".
-            "<span id=\"menu-button\" onclick=\"openNav()\">&#9776;</span>".
+            "<span id='menu-button' class='menu-button' onclick='openNav()'>&#9776;</span>".
             file_get_contents("inbox.html").
+            file_get_contents("contacts.html").
             "</div>";
 
     } else {

@@ -14,6 +14,12 @@
   background-color: #ffffff;
   margin: 0px;
   cursor: pointer; }
+#inbox-section .panel:hover {
+  background-color: #f6f5ef; }
+  #inbox-section .panel:hover .contact-label {
+    color: #5d5d5d; }
+  #inbox-section .panel:hover label {
+    color: #000000; }
 @media screen and (min-width: 700px) {
   #inbox-section #menu-button {
     display: none; } }
@@ -28,11 +34,5 @@
   font-size: 12px; }
 #inbox-section .contact-label {
   color: #787878; }
-#inbox-section .panel:hover {
-  background-color: #f6f5ef; }
-  #inbox-section .panel:hover .contact-label {
-    color: #5d5d5d; }
-  #inbox-section .panel:hover label {
-    color: #000000; }
 
 /*# sourceMappingURL=inbox.css.map */
