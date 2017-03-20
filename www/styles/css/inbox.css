@@ -1,27 +1,38 @@
-#inbox-container #menu-button {
-  float: left;
-  font-size: 40px;
-  cursor: pointer;
-  margin-left: 13px; }
-#inbox-container #brand {
+#inbox-section #title {
   font-size: 40px;
   display: block;
   text-align: left;
   margin: 0px;
   padding: 0px; }
-#inbox-container #brand-container {
+#inbox-section #title-container {
   float: right;
-  width: 65%; }
-#inbox-container #margin {
+  width: 60%; }
+#inbox-section #margin {
   height: 55px;
   width: 100%; }
-#inbox-container .panel {
+#inbox-section .panel {
+  background-color: #ffffff;
   margin: 0px;
   cursor: pointer; }
 @media screen and (min-width: 700px) {
-  #inbox-container #menu-button {
+  #inbox-section #menu-button {
     display: none; } }
-#inbox-container lable {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+#inbox-section label {
+  margin: 2px;
+  cursor: pointer; }
+#inbox-section .email-label {
+  font-size: 25px; }
+#inbox-section .subject-label {
+  font-size: 15px; }
+#inbox-section .content-label {
+  font-size: 12px; }
+#inbox-section .contact-label {
+  color: #787878; }
+#inbox-section .panel:hover {
+  background-color: #f6f5ef; }
+  #inbox-section .panel:hover .contact-label {
+    color: #5d5d5d; }
+  #inbox-section .panel:hover label {
+    color: #000000; }
 
 /*# sourceMappingURL=inbox.css.map */

@@ -1,40 +1,52 @@
-#inbox-container{
-  #menu-button {
-    float: left;
-    font-size: 40px;
-    cursor: pointer;
-    margin-left: 13px;
-  }
-
-  #brand{
+#inbox-section{
+  #title{
     font-size: 40px;
     display: block;
     text-align: left;
     margin: 0px;
     padding: 0px;
   }
-
-  #brand-container{
+  #title-container{
     float: right;
-    width: 65%;
+    width: 60%;
   }
-
   #margin{
     height: 55px;
     width: 100%;
   }
   .panel{
+    background-color: #ffffff;
     margin: 0px;
     cursor: pointer;
   }
-
   @media screen and (min-width: 700px) {
     #menu-button {
       display: none;
     }
   }
-
-  lable{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  label {
+    margin: 2px;
+    cursor: pointer;
+  }
+  .email-label {
+    font-size: 25px;
+  }
+  .subject-label {
+    font-size: 15px;
+  }
+  .content-label {
+    font-size: 12px;
+  }
+  .contact-label{
+    color: #787878;
+  }
+  .panel:hover{
+    background-color: #f6f5ef;
+    .contact-label{
+      color: #5d5d5d;
+    }
+    label {
+      color: #000000;
+    }
   }
 }

@@ -12,8 +12,13 @@
 <body>
 <?php
     session_start();
-    if (isset($_SESSION['Id'])) {
-        echo file_get_contents("side-menu.html").file_get_contents("inbox.html");
+    if (isset($_SESSION['contacts'])) {
+        echo file_get_contents("side-menu.html").
+            "<div class='main'>".
+            "<span id=\"menu-button\" onclick=\"openNav()\">&#9776;</span>".
+            file_get_contents("inbox.html").
+            "</div>";
+
     } else {
         echo file_get_contents("log-reg.html");
         if (strpos($_SERVER['REQUEST_URI'], "error=empty") !== false) {
@@ -33,4 +38,5 @@
 <script type="text/javascript" src="libraries/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/log-reg.js"></script>
 <script type="text/javascript" src="js/side-menu.js"></script>
+<script type="text/javascript" src="js/inbox.js"></script>
 </html>

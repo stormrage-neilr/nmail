@@ -17,7 +17,7 @@
     display: block;
     transition: 0.3s
   }
-  a:hover, .offcanvas a:focus {
+  a:hover, .offcanvas a:focus, .selected-menu-item{
     color: #ffffff;
   }
   .closebtn {

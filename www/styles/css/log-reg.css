@@ -6,8 +6,8 @@
 #log-reg-container .panel {
   padding: 0px;
   margin: auto;
-  max-width: 740px;
-  min-width: 740px; }
+  width: auto;
+  max-width: 740px; }
   #log-reg-container .panel .panel-body {
     padding: 0px; }
 #log-reg-container .form-group {

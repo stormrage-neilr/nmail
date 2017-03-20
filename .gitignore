@@ -1,2 +1,4 @@
 database/user-database-script.sql
+database/mail-database-procedures.sql
 php/dbconnect.php
+.idea

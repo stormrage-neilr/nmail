@@ -16,7 +16,7 @@
     color: #868686;
     display: block;
     transition: 0.3s; }
-  #side-menu a:hover, #side-menu .offcanvas a:focus {
+  #side-menu a:hover, #side-menu .offcanvas a:focus, #side-menu .selected-menu-item {
     color: #ffffff; }
   #side-menu .closebtn {
     position: absolute;
