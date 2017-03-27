@@ -1,5 +1,48 @@
 #contacts-section{
-  #title-container{
-    width: 60%;
+  #add-contact-button, .panel {
+    width: 100%;
+  }
+  #search-input, .contact-button{
+    width: 100%;
+  }
+  #add-contact-button, #search-input, .contact-button{
+    display: list-item;
+    padding: 5px;
+    font-size: 15pt;
+  }
+  .panel, #add-contact-button, #search-input, .contact-button {
+    margin: auto;
+  }
+  .label-container{
+    text-align: center;
+  }
+  .modal{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    top: 20%;
+  }
+  .note{
+    color: grey;
+    font-family: "Helvetica Neue";
+    margin: 5px;
+    margin-bottom: 15px;
+  }
+  #send-email-button, #generate-email-button{
+    width:49%;
+  }
+  #send-email-button{
+    float: right;
+  }
+  .astrix{
+    font-size: 12pt;
+    color: red;
+  }
+  .modal-footer{
+    text-align: center;
+    h3{
+      margin: 0px;
+      color: red;
+    }
   }
 }

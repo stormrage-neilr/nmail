@@ -1,3 +1,7 @@
+#margin{
+  height: 55px;
+  width: 100%;
+}
 .menu-button {
   float: right;
   font-size: 40px;
@@ -7,26 +11,22 @@
 #menu-button {
   float: left;
   margin-left: 13px;
+  position: fixed;
 }
 @media screen and (min-width: 700px) {
   #menu-button {
     display: none;
   }
 }
-#title{
-  font-size: 40px;
-  display: block;
-  text-align: left;
-  margin: 0px;
-  padding: 0px;
-}
-#title-container{
-  float: right;
-  width: 60%;
-}
-#margin{
-  height: 55px;
+#title-container {
   width: 100%;
+  #title {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
 }
 .section{
   display: none;

@@ -1,7 +1,6 @@
 /**
  * Created by neilrafferty on 16/03/2017.
  */
-
 function openNav() {
     document.getElementById("side-menu").style.width = "280px";
     document.getElementsByClassName("main")[0].style.marginLeft = "280px";
@@ -36,7 +35,6 @@ $(document).ready(function () {
     });
 
 
-
     function selectContent(s) {
         menu_items.removeClass('selected-menu-item');
         $('#' + s + '-button').addClass('selected-menu-item');
@@ -44,20 +42,25 @@ $(document).ready(function () {
         $('#' + s + '-section').show();
         resize();
     }
+
     window.onhashchange = function(){
-        if ($('#side-menu').length > 0) {
-            populateFromUrl();
-        }
+       if ($('#side-menu')) {
+           populateFromUrl();
+       }
     };
 
     function populateFromUrl() {
         var page_ref = location.hash.split('#').pop();
         if (page_ref.length == 0) {
             selectContent('inbox');
-        } else {
+        } else{
             selectContent(page_ref);
         }
     }
+
+    $('#logout-button').click(function () {
+        top.location.replace("");
+    });
 });
 
 

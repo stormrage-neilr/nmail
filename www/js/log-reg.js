@@ -9,29 +9,29 @@ $(document).ready(function(){
         $(this).addClass('active');
         $('#register-form').hide();
         $('#login-form').show();
-    })
+    });
 
     $('#reg-li').click(function(){
         $('#login-li').removeClass('active');
         $(this).addClass('active');
         $('#login-form').hide();
         $('#register-form').show();
-    })
+    });
 
-    function authenticate(){
-        $.ajax({
-            type: "POST",
-            url: "php/dbconnect.php",
-            cache: false,
-            success: auth,
-            error: function (xhr, ajaxOptions, thrownError) {
-                console.log(xhr.status);
-                console.log(thrownError);
-            }
-        });
-    }
-
-    function auth(str){
-        $('#login-li').append(str);
-    }
+    // function authenticate(){
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "php/dbconnect.php",
+    //         cache: false,
+    //         success: auth,
+    //         error: function (xhr, ajaxOptions, thrownError) {
+    //             console.log(xhr.status);
+    //             console.log(thrownError);
+    //         }
+    //     });
+    // }
+    //
+    // function auth(str){
+    //     $('#login-li').append(str);
+    // }
 });

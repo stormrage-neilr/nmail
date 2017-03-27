@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles/css/side-menu.css">
     <link rel="stylesheet" type="text/css" href="styles/css/all.css">
     <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/new-email.css">
 </head>
 <body>
 <?php
@@ -20,6 +21,7 @@
             "<span id='menu-button' class='menu-button' onclick='openNav()'>&#9776;</span>".
             file_get_contents("inbox.html").
             file_get_contents("contacts.html").
+            file_get_contents("new-email.html").
             "</div>";
 
     } else {
@@ -42,4 +44,5 @@
 <script type="text/javascript" src="js/log-reg.js"></script>
 <script type="text/javascript" src="js/side-menu.js"></script>
 <script type="text/javascript" src="js/inbox.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
 </html>

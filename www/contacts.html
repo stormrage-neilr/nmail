@@ -1,15 +1,41 @@
 <div id="contacts-section"  class="section">
-    <span class="menu-button" onclick="openNav()">+</span>
     <div id="title-container">
         <span id="title">contacts</span>
+    </div><br>
+    <button id="add-contact-button" class="btn-primary" data-toggle="modal" data-target="#add-contact-modal">Add Contact</button>
+
+    <div class="modal" id="add-contact-modal" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Contact</h4>
+            </div>
+
+            <div class="modal-body">
+                <form id="add-contact-form">
+                    <div class="form-group">
+                        <label for="contact-name-input">Contact Name</label><span class="astrix">*</span>
+                        <input name="contact" type="text" class="form-control" id="contact-name-input" placeholder="Enter Contact Name"><br>
+                        <label for="contact-email-input">Contact Email (Optional)</label>
+                        <input name="contact" type="email" class="form-control" id="contact-email-input" placeholder="Enter Contact Name Email (Optional).">
+                        <label class="note">Note: You will not be able to send emails to this contact until you receive one if you do not supply an email address.</label><br>
+                        <button id="generate-email-button" class="btn btn-primary">generate email</button>
+                        <button id="send-email-button" class="btn btn-success">send email</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <label>Please supply the following email address to your new contact:</label><h3>gqurpp62@nmail.club</h3>
+            </div>
+        </div>
     </div>
-    <div id="margin"></div>
+
+    <br>
     <div class="panel panel-default">
         <div class="panel-body">
-            <label class="email-label">peter@domain.com</label>
-            <label class="contact-label">via domain.com</label><br>
-            <label class="subject-label">Subject: Up and coming presentation.</label><br>
-            <label class="content-label">Hi guy, I am writing to tell you that...</label><br>
+            <input id="search-input" type="text" placeholder="Search">
+            <div class="label-container"><label>- a -</label></div>
+            <button class="contact-button"class="btn-default">Some Contact</button>
         </div>
     </div>
 </div>
